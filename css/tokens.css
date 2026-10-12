@@ -1,0 +1,45 @@
+:root {
+  --bg-base: #FDF6F0;
+  --bg-blush: #F3E3E7;
+  --bg-sky: #E3EDF3;
+  --bg-mint: #E3F3E8;
+  --bg-cream: #FAF3E8;
+  --bg-lavender: #E9E3F3;
+  --bg-peach: #FBE8E0;
+
+  --ink: #3B3532;
+  --ink-muted: #7C756F;
+  --ink-light: #A39C96;
+
+  --accent-coral: #F4AFAF;
+  --accent-blue: #AFCBFA;
+  --accent-mint: #A8E6CF;
+  --accent-lavender: #D8BFE9;
+  --accent-peach: #FBC7A7;
+  --accent-yellow: #FCE7A9;
+
+  --card-bg: rgba(255, 255, 255, 0.78);
+  --card-border: rgba(255, 255, 255, 0.9);
+
+  --shadow-soft:
+    0 18px 40px -14px rgba(60, 45, 40, 0.14),
+    0 2px 6px rgba(60, 45, 40, 0.06);
+  --shadow-lift:
+    0 24px 48px -14px rgba(60, 45, 40, 0.2),
+    0 4px 8px rgba(60, 45, 40, 0.08);
+
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --page-max: 78rem;
+  --page-padding: clamp(1rem, 4vw, 3rem);
+}

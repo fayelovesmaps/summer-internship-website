@@ -1,0 +1,213 @@
+.page {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--page-padding);
+}
+
+.section {
+  position: relative;
+  padding-block: clamp(4rem, 10vh, 7rem);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 30' preserveAspectRatio='none'%3E%3Cpath d='M0,15 C240,25 480,5 720,15 C960,25 1200,5 1440,15' fill='none' stroke='%23A39C96' stroke-width='2' stroke-dasharray='8 6' opacity='0.35'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 6vh, 4rem);
+}
+
+.section-header h2 {
+  margin-bottom: 0.6rem;
+}
+
+.section-header p {
+  margin-inline: auto;
+  color: var(--ink-muted);
+  font-size: 1.1rem;
+}
+
+/* Hero */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-block: 3rem;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__blob {
+  position: absolute;
+  width: min(70vw, 520px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-coral) 0%, transparent 70%);
+  opacity: 0.35;
+  filter: blur(70px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--ink) 0%, #8B7D77 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__subline {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--ink-muted);
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.hero__scroll svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scroll {
+    animation: none;
+  }
+}
+
+/* Cards grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: clamp(1.2rem, 3vw, 2rem);
+}
+
+/* Editorial speech-bubble list */
+.editorial-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* Polaroid clusters */
+.cluster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-bottom: clamp(4rem, 10vh, 7rem);
+}
+
+.cluster:last-child {
+  margin-bottom: 0;
+}
+
+.cluster:nth-child(even) .polaroid-stack {
+  order: 2;
+}
+
+.cluster:nth-child(even) .cluster__text {
+  order: 1;
+  text-align: right;
+}
+
+.cluster:nth-child(even) .cluster__text p {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.cluster__text {
+  padding-block: 1rem;
+}
+
+.cluster__date {
+  font-family: var(--font-hand);
+  font-size: 1.4rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+.cluster__text h3 {
+  margin-bottom: 0.8rem;
+}
+
+.cluster__text p {
+  color: var(--ink-muted);
+}
+
+@media (max-width: 50rem) {
+  .cluster {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cluster:nth-child(even) .polaroid-stack,
+  .cluster:nth-child(even) .cluster__text {
+    order: unset;
+    text-align: left;
+  }
+
+  .cluster:nth-child(even) .cluster__text p {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .polaroid-stack {
+    min-height: auto !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .polaroid {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(260px, 80%) !important;
+    transform: rotate(var(--rot, 0deg)) !important;
+  }
+}

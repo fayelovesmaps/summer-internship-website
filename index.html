@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Peek Into My Summer Internship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fredoka:wght@400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css?v=1">
+  <link rel="stylesheet" href="css/layout.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=10">
+  <link rel="stylesheet" href="css/animations.css?v=1">
+</head>
+<body>
+  <main class="page">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero__blob parallax-blob"></div>
+      <div class="hero__content reveal">
+        <p class="section-label">summer 2026</p>
+        <h1>A peek into my summer internship</h1>
+        <p class="hero__subline">Genuinely one of the best summers I've ever had! Let's scroll through what I built, learned, and loved.</p>
+      </div>
+      <div class="hero__scroll">
+        <span>scroll down</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Things I Got To Do -->
+    <section class="section" id="things-i-did">
+      <div class="section-header reveal">
+        <p class="section-label">the work</p>
+        <h2>things I got to work on</h2>
+        <p>A short recap of the main projects I learned from and built this summer.</p>
+      </div>
+      <div class="cards-grid cards-grid--path reveal-stagger">
+        <article class="card card--coral">
+          <h3>build a daily updated dashboard to track model promotion by scraping aggregator website</h3>
+          <img class="card__img" src="images/promotion_tracker.png" alt="Promotion tracker dashboard">
+        </article>
+        <article class="card card--blue">
+          <h3>web scrape data using requests and Playwright to compare model pricing</h3>
+          <img class="card__img" src="images/pricing_tracker.png" alt="Pricing tracker">
+        </article>
+        <article class="card card--mint">
+          <h3>create a demo of audio models, Qwen TTS and CosyVoice for food delivery client</h3>
+          <div class="card__gallery">
+            <img class="card__img" src="images/audio1.png" alt="audio demo 1">
+            <img class="card__img" src="images/audio2.png" alt="audio demo 2">
+          </div>
+        </article>
+        <article class="card card--lavender">
+          <h3>create a poster and video generation webpage integrating Qwen and Happy Horse for non-profit client</h3>
+          <div class="card__gallery">
+            <img class="card__img" src="images/poster_video_gen.png" alt="Poster and video generation webpage">
+            <img class="card__img" src="images/poster_gen.png" alt="Poster generation sample result">
+          </div>
+        </article>
+        <article class="card card--peach">
+          <h3>analyze Qwen Image 3.0’s performance in object removal with tests I produced and generated prompts for good results</h3>
+          <img class="card__img" src="images/object_rem1.png" alt="Object removal case 1">
+        </article>
+        <article class="card card--yellow">
+          <h3>run the DeepSWE and Vercel Next.js coding benchmarks on the newly released Qwen3.8</h3>
+          <div class="card__gallery">
+            <img class="card__img" src="images/nextJS.png" alt="Vercel Next.js benchmark">
+            <img class="card__img" src="images/DeepSWE.png" alt="DeepSWE benchmark">
+          </div>
+        </article>
+        <article class="card card--coral">
+          <h3>use Wonderclip to generate model use case examples and compare performance with competitors</h3>
+          <div class="card__gallery">
+            <img class="card__img" src="images/wonderclip_canvas.png" alt="Wonderclip canvas feature">
+            <img class="card__img" src="images/qwen-image-3.0_demo.png" alt="Qwen-image-3.0 demo">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Things I Learned -->
+    <section class="section" id="things-i-learned">
+      <div class="section-header reveal">
+        <p class="section-label">the lessons</p>
+        <h2>things I learned this summer</h2>
+        <p>a NON-exhaustive list of skills gained that I will keep with me</p>
+      </div>
+      <div class="editorial-list reveal-stagger">
+        <div class="lesson">
+          <span class="lesson__num">1</span>
+          <div class="lesson__content">
+            <h3>Maxing out my agents</h3>
+            <p>Creating skills from my ideas or GitHub repos, letting it work in my browser, and editing User Profile or Collaboration Style in settings to personalize the agent.</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <span class="lesson__num">2</span>
+          <div class="lesson__content">
+            <h3>Using the terminal and working with CLI</h3>
+            <p>Git commands, running agents like Qoder, aliyun CLI, GitHub CLI…etc.</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <span class="lesson__num">3</span>
+          <div class="lesson__content">
+            <h3>Model training basics</h3>
+            <p>Cleaning training data, data labelling, and LoRA on Alibaba Cloud's Platform for AI.</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <span class="lesson__num">4</span>
+          <div class="lesson__content">
+            <h3>Using AI models in different scenarios</h3>
+            <p>Direct API calls, using CLI, desktop apps, versus integrating AI harnesses.</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <span class="lesson__num">5</span>
+          <div class="lesson__content">
+            <h3>Vibe coding</h3>
+            <p>Using agents to plan with me, optimizing prompts to execute for better output, and wrapping resources on Github into skills for better UI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Things I Got To Do While My Agent Was Running -->
+    <section class="section" id="while-agent-ran">
+      <div class="section-header reveal">
+        <p class="section-label">short detours</p>
+        <h2>things I did on my breaks</h2>
+        <p>here's how I spent my time while my agent kept running</p>
+      </div>
+      <div class="snapshot-list reveal-stagger">
+        <article class="snapshot">
+          <figure class="snapshot__frame">
+            <img class="snapshot__img" src="images/weather.png" alt="Weather in terminal">
+          </figure>
+          <div class="snapshot__note">
+            <p class="snapshot__time">9:15 AM</p>
+            <h3>Check the weather in my terminal!</h3>
+            <p>running curl wttr.in makes me feel like a cool hacker</p>
+          </div>
+        </article>
+        <article class="snapshot">
+          <figure class="snapshot__frame">
+            <img class="snapshot__img" src="images/work_buddies.jpg" alt="Work buddies">
+          </figure>
+          <div class="snapshot__note">
+            <p class="snapshot__time">11:00 AM</p>
+            <h3>Hangout with my work buddies!</h3>
+            <p>Shoutout marketing team for gifting me the Qwen plushie! I love this capybara</p>
+          </div>
+        </article>
+        <article class="snapshot">
+          <figure class="snapshot__frame">
+            <img class="snapshot__img" src="images/sql.png" alt="SQL island game">
+          </figure>
+          <div class="snapshot__note">
+            <p class="snapshot__time">1:30 PM</p>
+            <h3>Learn SQL through an island game!</h3>
+            <p>Good to know that I can survive being stranded on a remote island through coding</p>
+          </div>
+        </article>
+        <article class="snapshot">
+          <figure class="snapshot__frame">
+            <img class="snapshot__img" src="images/tree_hugger.jpg" alt="Tree outside office">
+          </figure>
+          <div class="snapshot__note">
+            <p class="snapshot__time">5:30 PM</p>
+            <h3>Climb a tree outside the office!</h3>
+            <p>Reconnecting with nature after staring at a computer screen the whole day!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Beyond the 9-5 -->
+    <section class="section" id="beyond-9-5">
+      <div class="section-header reveal">
+        <p class="section-label">the rest of life</p>
+        <h2>things I enjoyed beyond the 9-5</h2>
+        <p>I will miss all my new friends and the adventures we embarked on</p>
+      </div>
+
+      <div class="cluster reveal">
+        <div class="polaroid-stack">
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/pacifica.JPG" alt="pacifica beach">
+            <figcaption class="polaroid__caption">beach in Pacifica</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/half_moon.jpg" alt="half moon bay">
+            <figcaption class="polaroid__caption">sunset at Half Moon Bay</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/big_sur.JPG" alt="Big Sur Coast">
+            <figcaption class="polaroid__caption">Big Sur lookout</figcaption>
+          </figure>
+        </div>
+        <div class="cluster__text">
+          <p class="cluster__date">A few Saturdays scattered across my summer</p>
+          <h3>Time by the coast</h3>
+          <p>Now convinced that driving 3+ hours for a weekend hangout with friends isn't outrageous. Aesthetics aside, wearing trashbags at the beach was a genius idea. Many in-n-out burgers eaten.</p>
+        </div>
+      </div>
+
+      <div class="cluster reveal">
+        <div class="polaroid-stack">
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/seal.JPG" alt="sea lion stretching">
+            <figcaption class="polaroid__caption">sea lion stretching</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/capitola.JPG" alt="capitola">
+            <figcaption class="polaroid__caption">cute street in Capitola</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/restaurant.JPG" alt="restaurant ocean view">
+            <figcaption class="polaroid__caption">ocean view from restaurant</figcaption>
+          </figure>
+        </div>
+        <div class="cluster__text">
+          <p class="cluster__date">Saturday, July 18</p>
+          <h3>Trip to Santa Cruz</h3>
+          <p>Walked around the pier and boardwalk. Stumbled upon a group of sea lions napping. Celebrated Jude Bellingham scoring the 6th goal in the final minute of the World Cup third place match</p>
+        </div>
+      </div>
+
+      <div class="cluster reveal">
+        <div class="polaroid-stack">
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/trees.JPG" alt="trees">
+            <figcaption class="polaroid__caption">looking up in a forest</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/group_photo.jpg" alt="group huddled near tree">
+            <figcaption class="polaroid__caption">the redwoods are HUGE!</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/overlook.JPG" alt="mountaintop overlook">
+            <figcaption class="polaroid__caption">view at the top of hike</figcaption>
+          </figure>
+        </div>
+        <div class="cluster__text">
+          <p class="cluster__date">Saturday, July 25</p>
+          <h3>Hiked up Muir Woods</h3>
+          <p>Ate Magnum ice cream bars and Drizzelicious rice cakes as a pre-hike snack. Carried a bag of grapes as we trekked up the mountain. The redwoods were unimaginably tall.</p>
+        </div>
+      </div>
+
+      <div class="cluster reveal">
+        <div class="polaroid-stack">
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/lou_seal.JPG" alt="lou seal">
+            <figcaption class="polaroid__caption">Giants mascot Lou Seal!</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/jerseys.jpeg" alt="selfie in jerseys">
+            <figcaption class="polaroid__caption">we supported the brewers</figcaption>
+          </figure>
+        </div>
+        <div class="cluster__text">
+          <p class="cluster__date">Wednesday, July 29</p>
+          <h3>Giants vs. Brewers Game</h3>
+          <p>Went to my first baseball game EVER with front-row seats. High fived Lou Seal despite wearing their opponent's jersey. Devoured unlimited ice cream (with toppings) and used up all my sunscreen.</p>
+        </div>
+      </div>
+
+      <div class="cluster reveal">
+        <div class="polaroid-stack">
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/view.jpg" alt="view">
+            <figcaption class="polaroid__caption">night view</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img class="polaroid__img" src="images/bereal.JPG" alt="BeReal selfie">
+            <figcaption class="polaroid__caption">BeReal selfie</figcaption>
+          </figure>
+        </div>
+        <div class="cluster__text">
+          <p class="cluster__date">Sunday, August 16</p>
+          <h3>Explored Stanford at night</h3>
+          <p>The last Sunday of the summer. A friend gave me a tour of campus on a 4km run. Took in the night views from a high point and huddled around a warm air vent as we talked about life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thank You Garland -->
+    <section class="section" id="thank-you">
+      <div class="section-header reveal">
+        <p class="section-label">gratitude</p>
+        <h2>thank you notes</h2>
+        <p>A few people I am especially grateful for!</p>
+      </div>
+
+      <div class="garland" aria-label="Scrolling thank you notes">
+        <div class="garland__track">
+          <div class="garland__rope-line" aria-hidden="true">
+            <svg class="garland__rope-svg" viewBox="0 0 1600 80" preserveAspectRatio="none">
+              <path class="garland__rope" d="M0,40 Q100,10 200,40 T400,40 T600,40 T800,40 T1000,40 T1200,40 T1400,40 T1600,40"/>
+              <path class="garland__rope garland__rope--twist" d="M0,40 Q100,10 200,40 T400,40 T600,40 T800,40 T1000,40 T1200,40 T1400,40 T1600,40"/>
+            </svg>
+          </div>
+          <article class="garland__card garland__card--mint">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Lawrence</span> for:</p>
+            <ul class="garland__list">
+              <li>Always giving feedback on my work in an encouraging way including on the Manim video I made during my interview.</li>
+              <li>Patiently helping me set up and providing everything I need for work from accounts, to purchasing credits, to approving permissions.</li>
+              <li>Encouraging me to explore topics and resources I am curious about.</li>
+              <li>Being so kind and checking in on me when I have been feeling unwell.</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--pink">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Yee</span> for:</p>
+            <ul class="garland__list">
+              <li>Planning projects for me to work on and giving me advice on how to approach them!</li>
+              <li>Being patient and understanding whenever I have questions even when you are super busy!</li>
+              <li>Introducing me to modern Chinese sayings and phrases.</li>
+              <li>Eating, going for walks, and getting coffee with me during our lunch break! Your companionship meant so much to me!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--lavender">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Joey</span> for:</p>
+            <ul class="garland__list">
+              <li>Being the most sweet and encouraging person ever, always saying "good job Faye!"</li>
+              <li>Talking me through dilemmas I have about life such as my college major and giving me good advice!</li>
+              <li>Inviting me to ask and making time to answer all my questions despite being so busy yourself.</li>
+              <li>Assigning me fun projects to work on such as running benchmark tests or trying out Wonderclip!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--peach">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Hanyi</span> for:</p>
+            <ul class="garland__list">
+              <li>Checking in on how I am doing and giving me cool things to look into.</li>
+              <li>Offering to answer any questions or help I may need even though you have so much to work on!</li>
+              <li>Lending me your chargers for my computer and phone whenever I need!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--lemon">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Judy</span> for:</p>
+            <ul class="garland__list">
+              <li>Being a good friend throughout this internship!</li>
+              <li>Giving me guidance on a lot of technical knowledge that I didn't have before.</li>
+              <li>Checking in on what I was working on and sharing your projects with me.</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--sky">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Sunny</span> for:</p>
+            <ul class="garland__list">
+              <li>All the fun conversations we got to have.</li>
+              <li>The memories of our coffee/target runs during our lunch break.</li>
+              <li>Being so sweet and caring when I share about my life!</li>
+            </ul>
+          </article>
+
+          <!-- Duplicate set for seamless infinite loop -->
+          <article class="garland__card garland__card--mint" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Lawrence</span> for:</p>
+            <ul class="garland__list">
+              <li>Always giving feedback on my work in an encouraging way including on the Manim video I made during my interview.</li>
+              <li>Patiently helping me set up and providing everything I need for work from accounts, to purchasing credits, to approving permissions.</li>
+              <li>Encouraging me to explore topics and resources I am curious about.</li>
+              <li>Being so kind and checking in on me when I have been feeling unwell.</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--pink" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Yee</span> for:</p>
+            <ul class="garland__list">
+              <li>Planning projects for me to work on and giving me advice on how to approach them!</li>
+              <li>Being patient and understanding whenever I have questions even when you are super busy!</li>
+              <li>Introducing me to modern Chinese sayings and phrases.</li>
+              <li>Eating, going for walks, and getting coffee with me during our lunch break! Your companionship meant so much to me!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--lavender" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Joey</span> for:</p>
+            <ul class="garland__list">
+              <li>Being the most sweet and encouraging person ever, always saying "good job Faye!"</li>
+              <li>Talking me through dilemmas I have about life such as my college major and giving me good advice!</li>
+              <li>Inviting me to ask and making time to answer all my questions despite being so busy yourself.</li>
+              <li>Assigning me fun projects to work on such as running benchmark tests or trying out Wonderclip!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--peach" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Hanyi</span> for:</p>
+            <ul class="garland__list">
+              <li>Checking in on how I am doing and giving me cool things to look into.</li>
+              <li>Offering to answer any questions or help I may need even though you have so much to work on!</li>
+              <li>Lending me your chargers for my computer and phone whenever I need!</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--lemon" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Judy</span> for:</p>
+            <ul class="garland__list">
+              <li>Being a good friend throughout this internship!</li>
+              <li>Giving me guidance on a lot of technical knowledge that I didn't have before.</li>
+              <li>Checking in on what I was working on and sharing your projects with me.</li>
+            </ul>
+          </article>
+          <article class="garland__card garland__card--sky" aria-hidden="true">
+            <div class="garland__thread" aria-hidden="true"></div>
+            <p class="garland__note">Thank you <span class="garland__highlight">Sunny</span> for:</p>
+            <ul class="garland__list">
+              <li>All the fun conversations we got to have.</li>
+              <li>The memories of our coffee/target runs during our lunch break.</li>
+              <li>Being so sweet and caring when I share about my life!</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <button class="paper-plane" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M2 12l20-10-6.5 18L11 14l-9-2z"/>
+        </svg>
+      </button>
+      <p>Made with <span class="site-footer__heart">♥</span> to remember summer 2026</p>
+    </footer>
+  </main>
+
+  <div class="coffee-progress" aria-hidden="true" title="Reading progress">
+    <div class="coffee-progress__cup">
+      <div class="coffee-progress__liquid"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close image">&times;</button>
+    <img class="lightbox__img" src="" alt="">
+  </div>
+
+  <script src="js/main.js?v=12"></script>
+</body>
+</html>
